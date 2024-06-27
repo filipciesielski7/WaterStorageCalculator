@@ -1,0 +1,23 @@
+name: Run Tests on Development Container
+
+on:
+  push:
+    branches-ignore:
+      - master
+  pull_request:
+    branches:
+      - "*"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build and run development Docker container
+        run: docker-compose -f docker-compose.dev.yml up --build -d
+
+      - name: Run tests in development containers
+        run: docker run waterstoragecalculator/api-dev npm test
