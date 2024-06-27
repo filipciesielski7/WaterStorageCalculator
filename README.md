@@ -3,7 +3,7 @@
 ![prod-publish](https://github.com/filipciesielski7/WaterStorageCalculator/actions/workflows/prod-publish.yml/badge.svg)
 ![dev-test](https://github.com/filipciesielski7/WaterStorageCalculator/actions/workflows/dev-tests.yml/badge.svg)
 
-This project is a solution for a tech recruitment task. It calculates the volume of water stored after a rainfall based on a given array representing the profile of a surface.
+This project is a solution for a tech recruitment task. It calculates the volume of water stored after a rainfall based on a given array representing the profile of a surface. The task involves implementing a REST server that exposes a single endpoint, which accepts an array as input and returns a number representing the volume of water stored after a rainfall over the surface represented by the given array.
 
 ![Sample surface](./sample-surface.png)
 
